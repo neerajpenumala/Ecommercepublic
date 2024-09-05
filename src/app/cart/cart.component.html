@@ -1,0 +1,81 @@
+<div class="container my-5">
+    <!-- Current Cart Section -->
+    <div class="border border-dark rounded p-4">
+        <h3 class="text-center w-25 mx-auto border-bottom pb-2">Current Cart</h3>
+        
+        <div class="mt-5">
+            <!-- Order Button -->
+            <div class="d-grid w-50 mx-auto mb-3">
+                <button class="btn btn-outline-success fs-4" type="button" routerLink="/orders">Order</button>
+            </div>
+
+            <!-- Cart Summary Table -->
+            <table class="table w-50 mx-auto table-bordered table-hover shadow">
+                <tbody>
+                    <tr>
+                        <td>Total Items</td>
+                        <td class="fs-5 fw-bold">5</td>
+                    </tr>
+                    <tr>
+                        <td>Total Price</td>
+                        <td class="fs-5 fw-bold text-danger">$250.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping Charges</td>
+                        <td class="fs-5 fw-bold text-danger">$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td class="fs-5 fw-bold text-success">-$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>You Have to Pay</td>
+                        <td class="fs-5 fw-bold text-success">$245.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Current Cart Items -->
+        <div class="w-75 mx-auto mt-5">
+            <h4>Cart Items</h4>
+            <div class="row g-3">
+                <!-- Example Product -->
+                <div class="col-6">
+                    <div class="card p-3">
+                        <h5>Product Name</h5>
+                        <p>Price: $50</p>
+                    </div>
+                </div>
+                <!-- Repeat for more items -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Previous Carts Section -->
+    <div class="mt-5 border border-dark rounded p-4">
+        <h3 class="text-center w-25 mx-auto border-bottom pb-2 mb-4">Previous Carts</h3>
+        
+        <!-- Previous Cart Example -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Ordered On: <strong>01-Sep-2024</strong></span>
+                <span>Items: 3</span>
+                <span>Price Paid: <strong>$150.00</strong></span>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <!-- Example Product in Previous Cart -->
+                    <div class="col-4">
+                        <div class="card p-3">
+                            <h5>Product Name</h5>
+                            <p>Price: $50</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for more products -->
+                </div>
+            </div>
+        </div>
+        <!-- Repeat for more previous carts -->
+    </div>
+</div>
