@@ -5,7 +5,7 @@
 
     <div class="btn-toolbar" role="toolbar">
         <div class="btn-group btn-group-lg me-3" role="group">
-            <button type="button" class="btn btn-outline-light" [routerLink]="['/home']">Home</button>
+            <button type="button" class="btn btn-outline-light" [routerLink]="['/']">Home</button>
             <div class="btn-group" role="group">
                 <button type="button" class="btn btn-outline-light dropdown-toggle" [routerLink]="['/products']" data-bs-toggle="dropdown">
                     Categories
@@ -33,7 +33,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">{{ modalTitle }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
             </div>
             <div class="modal-body">
                 <ng-container *ngIf="currentView === 'login'">
