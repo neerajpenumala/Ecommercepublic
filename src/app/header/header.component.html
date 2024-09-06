@@ -22,6 +22,11 @@
             <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#generalmodal" (click)="openModal('register')">
                 Register
             </button>
+            <button type="button" class="btn btn-outline-light" [routerLink]="['/cart']">
+                Cart
+                <span class="badge bg-warning text-dark">0</span>
+            </button>
+
             <!-- Other buttons... -->
         </div>
     </div>
